@@ -120,5 +120,7 @@ DDos-Made by DRIMIIX
         help = input("/NO PERMISSION DO YOU NEED HELP?[y or n]/")
         if help.startswith("y"):
             print('''/ENTER THE TARGET WITH THE DOMAIN OR IP \n IMPORTANT  TO ADD IS: \n "https://" and "/" AT THE END OF THE URL \n EXAMPLE: https://google.com/ or https://ip_addr/ \n /''')
-        quit()
+            quit()
+        else:
+            quit()
 
