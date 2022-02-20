@@ -106,7 +106,7 @@ DDos-Made by DRIMIIX
 """)
     target = input("/ENTER YOUR FULL TARGET/: ")
     print("/TARGET VERFIED/")
-    ans = input("/DO YOU WANT TO START ATTACKING?y[y or n]/")
+    ans = input("/DO YOU WANT TO START ATTACKING?[y or n]/")
     if ans.startswith("y"):
         print("/STARTING TO ATTACK/")
         t1 = threading.Thread(target=RunThread)
@@ -115,7 +115,10 @@ DDos-Made by DRIMIIX
         t2.start()
         t1.join()
         t2.join()
+    
     else:
-        print("/NO PERMISSION/")
+        help = input("/NO PERMISSION DO YOU NEED HELP?[y or n]/")
+        if help.startswith("y"):
+            print('''/ENTER THE TARGET WITH THE DOMAIN OR IP \n IMPORTANT  TO ADD IS: \n "https://" and "/" AT THE END OF THE URL \n EXAMPLE: https://google.com/ or https://ip_addr/ \n /''')
         quit()
 
